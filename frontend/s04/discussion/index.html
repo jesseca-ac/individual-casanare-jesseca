@@ -7,8 +7,64 @@
 </head>
 <body>
 
-    <h2>HTML Attributes</h2>
-    <p><em>Modifiers of element behaviors.</em></p>
+    <h2 id="top">HTML Attributes</h2>
+    <!-- the align attribute changes the alignment of the paragraph element -->
+    <p align="center">
+        <em>Modifiers of element behaviors.</em>
+    </p>
+
+    <h2>HTML Images</h2>
+    <p align="right">
+        <em>
+            An image can be shown using &lt;img&gt; tag along with its <strong>src</strong> attribute.
+        </em>
+    </p>
+
+    <!-- adds an image using absolute linking -->
+    <a href="http://placekitten.com/450/450">
+        <img src="http://placekitten.com/450/450">
+    </a>
+    <p>
+        <code>
+            &lt;img src="http://placekitten.com/450/450"&gt;
+        </code>
+    </p>
+
+    <!-- adds an image using relative linking -->
+    <a href="https://zuitt.co" target="_blank">
+        <img src="./images/zuitt-logo.png">
+    </a>
+    <p>
+        <code>
+            &lt;img src="./images/zuitt-logo.png"&gt;
+        </code>
+    </p>
+
+    <p>Valid image extensions are the following:</p>
+	<ol type="I" reversed>
+		<li>png</li>
+		<li>jpg</li>
+		<li>gif</li>
+		<li>svg</li>
+		<li>webp</li>
+	</ol>
+
+    <p>
+        Take a look at w3schools attribute references <a href="https://www.w3schools.com/tags/ref_attributes.asp" target="_blank">here</a>.
+    </p>
+
+    <h2>HTML Links</h2>
+
+    <h4>Absolute Link</h4>
+    <!-- creates a hyperlink element that redirects to an external page -->
+    <a href="https://zuitt.co">I'm a hyperlink</a>
+
+    <h4>Relative Link</h4>
+    <!-- redirects to the link.html file -->
+    <p>Go to <a href="./link.html">link.html</a> page</p>
+
+    <!-- redirects to the HTML element with the top ID attribute -->
+    <p>Go to <a href="#top">top</a></p>
     
 </body>
 </html>
