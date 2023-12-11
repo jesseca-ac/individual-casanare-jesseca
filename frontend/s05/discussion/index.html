@@ -109,6 +109,24 @@
         <label for="notes">Notes:</label><br>
         <textarea type="text" name="notes" id="notes" rows="5"></textarea><br>
 
+        <!-- Radio Buttons -->
+        <label>New User:</label><br>
+        <!-- name attributes should be the same for related radio buttons -->
+        <input type="radio" name="new_user" id="user-type1" value="yes" required>
+        <label for="user-type1">Yes</label><br>
+        <input type="radio" name="new_user" id="user-type2" value="no">
+        <label for="user-type2">No</label><br>
+
+        <!-- Checkboxes -->
+        <label for="role">Role:</label><br>
+        <!-- creates checkboxes for multiple choices -->
+        <input type="checkbox" name="role1" id="role1" value="developer">
+        <label for="role1">Developer</label><br>
+        <input type="checkbox" name="role2" id="role2" value="student">
+        <label for="role2">Sudent</label><br>
+        <input type="checkbox" name="role3" id="role3" value="manager">
+        <label for="role3">Manager</label><br>
+
         <!-- creates button that will submit form data -->
         <!-- type will define how the button with behave -->
         <button type="submit">Submit</button><br>
