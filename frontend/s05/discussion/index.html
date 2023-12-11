@@ -7,133 +7,145 @@
 </head>
 <body>
 
-    <h2>HTML Entities</h2>
-    <p>
-        <em>Reserved characters in HTML (e.g. &lt; or &gt; characters that can mix up with HTML code).</em>
-    </p>
+    <header>
+        <h1>HTML Tables and Forms</h1>
+    </header>
 
-    <table border="1">
-        <!-- thead used to group table header content -->
-        <thead>
-            <!-- tr defines a table row -->
-            <tr>
-                <!-- th defines table header element -->
+    <main>
+        <section>
+            <h2>HTML Entities</h2>
+            <p>
+                <em>Reserved characters in HTML (e.g. &lt; or &gt; characters that can mix up with HTML code).</em>
+            </p>
+            <!-- defines an HTML table -->
+            <table border="1">
+                <!-- thead used to group table header content -->
+                <thead>
+                    <!-- tr defines a table row -->
+                    <tr>
+                        <!-- th defines table header element -->
+        
+                        <th colspan="2">Entity</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+        
+                <!-- tbody is used to group table body content -->
+                <tbody>
+                    <tr>
+                        <!-- td defines table data -->
+                        <td>&lt;</td>
+                        <td>lt</td>
+                        <td>less than</td>
+                    </tr>
+                    <tr>
+                        <td>&gt;</td>
+                        <td>gt</td>
+                        <td>greater than</td>
+                    </tr>
+                    <tr>
+                        <td>&#8369;</td>
+                        <td>#8369</td>
+                        <td>peso sign</td>
+                    </tr>
+                    <tr>
+                        <td>&amp;</td>
+                        <td>amp</td>
+                        <td>ampersand</td>
+                    </tr>
+                    <tr>
+                        <td>&quot;</td>
+                        <td>quot</td>
+                        <td>double quotation mark</td>
+                    </tr>
+                    <tr>
+                        <td>&apos;</td>
+                        <td>apos</td>
+                        <td>single quotation mark (apostrophe)</td>
+                    </tr>
+                    <tr>
+                        <td>&ntilde;</td>
+                        <td>ntilde</td>
+                        <td>Lower Tilde</td>
+                    </tr>
+                    <tr>
+                        <td>&Ntilde;</td>
+                        <td>Ntilde</td>
+                        <td>Upper Tilde</td>
+                    </tr>
+                </tbody>
+        
+                <!-- tfoot is used to group table footer content -->
+                <tfoot>
+                    <tr>
+                        <th colspan="3">List of HTML entities</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    
+        <hr>
+    
+        <section>
 
-                <th colspan="2">Entity</th>
-                <th>Description</th>
-            </tr>
-        </thead>
+            <h2>HTML Forms</h2>
+            <p>
+                <em>Input elements that make up a form.</em>
+            </p>
+        
+            <!-- creates and HTML form to capture user input -->
+            <!-- action determines where data is submitted after clicking the button -->
+            <form action="https://google.com">
+        
+                <!-- creates a label and allows for input field selection when clicked -->
+                <label for="full_name">Full Name:</label><br>
+                <!-- creates an input field to capture user input -->
+                <input type="text" name="full_name" id="full_name" required autocomplete><br>
+        
+                <label for="birth_date">Birth Date:</label><br>
+                <input type="date" name="birth_date" id="birth_date" required><br>
+        
+                <label for="age">Age:</label><br>
+                <input type="number" name="age" id="age" required><br>
+        
+                <label for="gender">Gender:</label><br>
+                <!-- creates a dropdown menu -->
+                <select name="gender" id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select><br>
+        
+                <label for="notes">Notes:</label><br>
+                <textarea type="text" name="notes" id="notes" rows="5"></textarea><br>
+        
+                <!-- Radio Buttons -->
+                <label>New User:</label><br>
+                <!-- name attributes should be the same for related radio buttons -->
+                <input type="radio" name="new_user" id="user-type1" value="yes" required>
+                <label for="user-type1">Yes</label><br>
+                <input type="radio" name="new_user" id="user-type2" value="no">
+                <label for="user-type2">No</label><br>
+        
+                <!-- Checkboxes -->
+                <label for="role">Role:</label><br>
+                <!-- creates checkboxes for multiple choices -->
+                <input type="checkbox" name="role1" id="role1" value="developer">
+                <label for="role1">Developer</label><br>
+                <input type="checkbox" name="role2" id="role2" value="student">
+                <label for="role2">Sudent</label><br>
+                <input type="checkbox" name="role3" id="role3" value="manager">
+                <label for="role3">Manager</label><br>
+        
+                <!-- creates button that will submit form data -->
+                <!-- type will define how the button with behave -->
+                <button type="submit">Submit</button><br>
+        
+                <!-- creates a button to reset form data -->
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+    </main>
 
-        <!-- tbody is used to group table body content -->
-        <tbody>
-            <tr>
-                <!-- td defines table data -->
-                <td>&lt;</td>
-                <td>lt</td>
-                <td>less than</td>
-            </tr>
-            <tr>
-				<td>&gt;</td>
-				<td>gt</td>
-				<td>greater than</td>
-			</tr>
-			<tr>
-				<td>&#8369;</td>
-				<td>#8369</td>
-				<td>peso sign</td>
-			</tr>
-			<tr>
-				<td>&amp;</td>
-				<td>amp</td>
-				<td>ampersand</td>
-			</tr>
-			<tr>
-				<td>&quot;</td>
-				<td>quot</td>
-				<td>double quotation mark</td>
-			</tr>
-			<tr>
-				<td>&apos;</td>
-				<td>apos</td>
-				<td>single quotation mark (apostrophe)</td>
-			</tr>
-			<tr>
-				<td>&ntilde;</td>
-				<td>ntilde</td>
-				<td>Lower Tilde</td>
-			</tr>
-			<tr>
-				<td>&Ntilde;</td>
-				<td>Ntilde</td>
-				<td>Upper Tilde</td>
-			</tr>
-        </tbody>
-
-        <!-- tfoot is used to group table footer content -->
-        <tfoot>
-            <tr>
-                <th colspan="3">List of HTML entities</th>
-            </tr>
-        </tfoot>
-    </table>
-
-    <hr>
-
-    <h2>HTML Forms</h2>
-    <p>
-        <em>Input elements that make up a form.</em>
-    </p>
-
-    <!-- creates and HTML form to capture user input -->
-    <!-- action determines where data is submitted after clicking the button -->
-    <form action="https://google.com">
-
-        <!-- creates a label and allows for input field selection when clicked -->
-        <label for="full_name">Full Name:</label><br>
-        <!-- creates an input field to capture user input -->
-        <input type="text" name="full_name" id="full_name" required autocomplete><br>
-
-        <label for="birth_date">Birth Date:</label><br>
-        <input type="date" name="birth_date" id="birth_date" required><br>
-
-        <label for="age">Age:</label><br>
-        <input type="number" name="age" id="age" required><br>
-
-        <label for="gender">Gender:</label><br>
-        <!-- creates a dropdown menu -->
-        <select name="gender" id="gender">
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-        </select><br>
-
-        <label for="notes">Notes:</label><br>
-        <textarea type="text" name="notes" id="notes" rows="5"></textarea><br>
-
-        <!-- Radio Buttons -->
-        <label>New User:</label><br>
-        <!-- name attributes should be the same for related radio buttons -->
-        <input type="radio" name="new_user" id="user-type1" value="yes" required>
-        <label for="user-type1">Yes</label><br>
-        <input type="radio" name="new_user" id="user-type2" value="no">
-        <label for="user-type2">No</label><br>
-
-        <!-- Checkboxes -->
-        <label for="role">Role:</label><br>
-        <!-- creates checkboxes for multiple choices -->
-        <input type="checkbox" name="role1" id="role1" value="developer">
-        <label for="role1">Developer</label><br>
-        <input type="checkbox" name="role2" id="role2" value="student">
-        <label for="role2">Sudent</label><br>
-        <input type="checkbox" name="role3" id="role3" value="manager">
-        <label for="role3">Manager</label><br>
-
-        <!-- creates button that will submit form data -->
-        <!-- type will define how the button with behave -->
-        <button type="submit">Submit</button><br>
-
-        <!-- creates a button to reset form data -->
-        <button type="reset">Reset</button>
-    </form>
     
 </body>
 </html>
