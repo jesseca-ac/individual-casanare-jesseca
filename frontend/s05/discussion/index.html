@@ -76,6 +76,43 @@
             </tr>
         </tfoot>
     </table>
+
+    <hr>
+
+    <h2>HTML Forms</h2>
+    <p>
+        <em>Input elements that make up a form.</em>
+    </p>
+
+    <!-- creates and HTML form to capture user input -->
+    <!-- action determines where data is submitted after clicking the button -->
+    <form action="https://google.com">
+
+        <!-- creates a label and allows for input field selection when clicked -->
+        <label for="full_name">Full Name:</label><br>
+
+        <!-- creates an input field to capture user input -->
+        <input type="text" name="full_name" id="full_name" required autocomplete><br>
+
+        <label for="birth_date">Birth Date:</label><br>
+        <input type="date" name="birth_date" id="birth_date" required><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" name="age" id="age" required><br>
+
+        <label for="gender">Gender:</label><br>
+        <select name="gender" id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br>
+
+        <!-- creates button that will submit form data -->
+        <!-- type will define how the button with behave -->
+        <button type="submit">Submit</button><br>
+
+        <!-- creates a button to reset form data -->
+        <button type="reset">Reset</button>
+    </form>
     
 </body>
 </html>
