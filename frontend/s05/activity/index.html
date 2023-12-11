@@ -44,38 +44,38 @@
         
         <section>
             <h2>Contact Form</h2>
-            <form action="">
+            <form action="https://google.com">
 
-                <label for="">First Name:</label><br>
-                <input type="text" required autocomplete><br>
+                <label for="firstName">First Name:</label><br>
+                <input type="text" id="firstName" required autocomplete><br>
 
-                <label for="">Last Name:</label><br>
-                <input type="text" required autocomplete><br>
+                <label for="lastName">Last Name:</label><br>
+                <input type="text" id="lastName" required autocomplete><br>
 
-                <label for="">Email:</label><br>
-                <input type="text" required autocomplete><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" required autocomplete><br>
 
-                <label for="">Contact Number:</label><br>
-                <input type="text" required autocomplete><br>
+                <label for="contactNum">Contact Number:</label><br>
+                <input type="text" id="contactNum" autocomplete><br>
 
-                <label for="">Service Style:</label><br>
-                <select name="" id="" required autocomplete>
-                    <option value="">Front End Programming</option>
-                    <option value="">Back End Programming</option>
-                    <option value="">Full Stack Programming</option>
+                <label for="serviceType">Service Type:</label><br>
+                <select name="" id="serviceType" required autocomplete>
+                    <option value="Front End Programming">Front End Programming</option>
+                    <option value="Back End Programming">Back End Programming</option>
+                    <option value="Full Stack Programming">Full Stack Programming</option>
                 </select><br>
 
-                <label for="">Preferred Contact:</label><br>
-                <input type="checkbox"><label for="">Email</label><br>
-                <input type="checkbox"><label for="">Phone Package:</label><br>
-                <input type="radio"><label for="">Basic</label><br>
-                <input type="radio"><label for="">Premium</label><br>
+                <label>Preferred Contact:</label><br>
+                <input type="checkbox" name="email" id="check1"><label for="check1">Email</label><br>
+                <input type="checkbox" name="phonePackage" id="check2"><label for="check2">Phone Package:</label><br>
+                <input type="radio" name="radio" id="radio1"><label for="radio1">Basic</label><br>
+                <input type="radio" name="radio" id="radio2"><label for="radio2">Premium</label><br>
 
-                <label for="">Message</label><br>
-                <textarea name="" id="" cols="30" rows="10" required autocomplete></textarea><br>
+                <label for="message">Message</label><br>
+                <textarea name="" id="message" cols="30" rows="10" required autocomplete></textarea><br>
 
-                <button>Send Inquiry</button><br>
-                <button>Reset</button><br>
+                <button type="submit">Send Inquiry</button><br>
+                <button type="reset">Reset</button><br>
 
             </form>
         </section>
