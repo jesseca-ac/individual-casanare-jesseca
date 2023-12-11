@@ -47,16 +47,16 @@
             <form action="https://google.com">
 
                 <label for="firstName">First Name:</label><br>
-                <input type="text" id="firstName" required autocomplete><br>
+                <input type="text" name="firstName" id="firstName" required autocomplete><br>
 
                 <label for="lastName">Last Name:</label><br>
-                <input type="text" id="lastName" required autocomplete><br>
+                <input type="text" name="lastName" id="lastName" required autocomplete><br>
 
                 <label for="email">Email:</label><br>
-                <input type="text" id="email" required autocomplete><br>
+                <input type="email" name="email" id="email" required autocomplete><br>
 
                 <label for="contactNum">Contact Number:</label><br>
-                <input type="text" id="contactNum" autocomplete><br>
+                <input type="tel" name="contactNum" id="contactNum" required autocomplete><br>
 
                 <label for="serviceType">Service Type:</label><br>
                 <select name="" id="serviceType" required autocomplete>
@@ -66,13 +66,13 @@
                 </select><br>
 
                 <label>Preferred Contact:</label><br>
-                <input type="checkbox" name="email" id="check1"><label for="check1">Email</label><br>
-                <input type="checkbox" name="phonePackage" id="check2"><label for="check2">Phone Package:</label><br>
-                <input type="radio" name="radio" id="radio1"><label for="radio1">Basic</label><br>
-                <input type="radio" name="radio" id="radio2"><label for="radio2">Premium</label><br>
+                <input type="checkbox" name="email" id="check1" value="Yes"><label for="check1">Email</label><br>
+                <input type="checkbox" name="phonePackage" id="check2" value="Yes"><label for="check2">Phone Package:</label><br>
+                <input type="radio" name="phonePackageRadio" id="radio1" value="Basic"><label for="radio1">Basic</label><br>
+                <input type="radio" name="phonePackageRadio" id="radio2" value="Premium"><label for="radio2">Premium</label><br>
 
                 <label for="message">Message</label><br>
-                <textarea name="" id="message" cols="30" rows="10" required autocomplete></textarea><br>
+                <textarea name="message" id="message" cols="30" rows="10" required autocomplete></textarea><br>
 
                 <button type="submit">Send Inquiry</button><br>
                 <button type="reset">Reset</button><br>
@@ -80,6 +80,11 @@
             </form>
         </section>
     </main>
+    <hr>
+    <footer>
+        <h4>References:</h4>
+        <p><a href="https://www.w3schools.com/html/html_form_input_types.asp">HTML Input Types by w3schools</a></p>
+    </footer>
 
     
 </body>
