@@ -1,0 +1,80 @@
+/* Float Property */
+
+.img-float {
+    width: 250px;
+    height: 250px;
+    float: inherit;
+}
+
+/* CSS Position Property */
+
+.parent-element {
+    background-color: skyblue;
+    padding: 50px 10px;
+    position: relative;
+    height: 800vh;
+}
+
+.child-one {
+    background-color: gray;
+    padding: 10px;
+}
+
+.child-two {
+    background-color: yellow;
+    padding: 10px;
+
+    /* static is the default value for elements, the element is positioned according to the normal flow of the document */
+
+    /* relative will remain in the normal flow of the document but the left, right, top, bottom, and z-index properties affect the position of the element */
+
+    /* absolute is a position relative to their parent elements, the element is removed from the normal document flow */
+
+    /* fixed position are similar to absolute position elements which are also removed from the normal flow of documents, however, they are always positioned relative to html element */
+
+    /* sticky is a mix of relative and fixed position. It will act relatively until a certain scroll point and then it will act as fixed */
+    position: sticky;
+    top: 10px;
+}
+
+.child-three {
+    background-color: gray;
+    padding: 10px;
+}
+
+html {
+    height: 800vh;
+}
+
+.container {
+    position: relative;
+}
+
+.black-box {
+    position: relative;z-index: 1;
+    border: 2px solid black;
+    height: 100px;
+    margin: 30px;
+}
+
+.gray-box {
+    position: absolute;
+    z-index: 3;
+    background: lightgray;
+    height: 60px;
+    width: 70%;
+    left: 50px;
+    top: 50px;
+}
+
+.green-box {
+    position: absolute;
+    z-index: 2;
+    background: lightgreen;
+    height: 100px;
+    width: 35%;
+    left: 270px;
+    top: -15px;
+}
+
+/* the highter the value of z-index, the more it becomes on top of other elements */
