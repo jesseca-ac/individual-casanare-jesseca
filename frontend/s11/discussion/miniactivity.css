@@ -1,0 +1,23 @@
+header {
+    padding: 5%;
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 50px;
+}
+
+nav {
+    background-color: gray;
+    padding: 1%;
+    border-radius: 50px;
+}
+
+nav ul {
+    text-align: center;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    padding: 5%;
+}
+
