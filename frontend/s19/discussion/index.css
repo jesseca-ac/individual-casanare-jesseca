@@ -1,3 +1,178 @@
-.navbar-brand {
-    font-family: 'Montserrat', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*navbar brand*/
+#logo {
+    color: #003363;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 24px;
+    /* 100% */
+}
+
+/*navbar links*/
+nav a {
+    color: #004E84 !important;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+}
+
+/*title section*/
+#title {
+    color: var(--GS-Brand-White, #FFF);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 84px;
+    /* 123.529% */
+}
+
+/* base section */
+#base {
+    align-items: center;
+    padding: 8px 24px;
+    background: #12c6ff;
+    border-radius: 2px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px;
+    /* 150% */
+}
+
+#landing {
+    background: linear-gradient(rgba(0, 34, 65, 0.61), rgba(0, 34, 64, 0.61)), url("./images/image\ 6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about {
+    background: #003363;
+
+}
+
+#text-title {
+    color: #12C6FF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 133.333% */
+}
+
+#about p {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+}
+
+#contact {
+    background: #003363;
+}
+
+#contact-header {
+    color: #12C6FF;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    /* 100% */
+}
+
+#contact-text {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    /* 125% */
+}
+
+/* form labels */
+#contact form label {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* form input */
+#contact form input,
+textarea {
+    border: 1px solid #12C6FF !important;
+    background: #FFF !important;
+    border-radius: 0 !important;
+    color: #003363 !important;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#form-btn {
+    padding: 8px 24px;
+    gap: 8px;
+    border-radius: 2px;
+    background: #12C6FF;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px;
+    /* 150% */
+}
+
+#contact-image {
+    background: linear-gradient(rgba(0, 34, 65, 0.61), rgba(0, 34, 65, 0.61)), url("./images/socials.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#social-header {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    /* 100% */
+}
+
+/* footer */
+footer {
+    color: #003363;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    /* 184.615% */ß
 }

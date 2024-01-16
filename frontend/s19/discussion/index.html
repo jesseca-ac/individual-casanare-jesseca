@@ -1,43 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Wireframes, Mockup and Prototypes || Discussion</title>
-
     <!-- Bootstrap Link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Open+Sans&display=swap"
+        rel="stylesheet">
     <!-- External CSS -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="./index.css">
 </head>
+
 <body>
     <!--navbar-->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">LOGO</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#" id="logo">LOGO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <div class="navbar-nav ml-auto">
                     <a class="nav-link" href="#">About Me</a>
                     <a class="nav-link" href="#">My Works</a>
                     <a class="nav-link" href="#">Contact</a>
                 </div>
             </div>
         </div>
-	</nav>
-    
+    </nav>
+    <!-- landing section -->
+    <div class="py-5 container-fluid" id="landing">
+        <div class="row justify-content-center py-5 my-5">
+            <div class="col-md-8 pt-md-5 text-center">
+                <h1 id="title">Seeing the world through my lens</h1>
+                <a href="#" class="d-inline-block mt-5 text-decoration-none" id="base">View My Work</a>
+            </div>
+        </div>
+    </div>
+    <!-- end of landing section/page 4 -->
 
-    <!-- Bootstrap Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- page2/ about section start -->
+    <div class="container-fluid p-md-5" id="about">
+        <div class="row justify-content-center py-md-5 my-md-5">
+            <div class="col-md-3 my-5 my-md-0">
+                <img src="./images/about.png" class="img-fluid">
+            </div>
+            <div class="col-md-7 ml-4 px-2">
+                <h4 id="text-title">Hi! I’m John Doe.</h4>
+                <p>
+                    I am a passionate photographer who loves capturing life's special moments. From candid shots of
+                    everyday life to capturing the beauty of nature, I strive to create beautiful images that will last
+                    a lifetime. I am always looking for new opportunities to create unique and inspiring photos that are
+                    sure to leave a lasting impression.
+                </p>
+                <p>
+                    I have been a photographer for many years and have had the privilege of working with some of the
+                    most talented professionals in the industry. I have had the opportunity to travel to some of the
+                    most beautiful places in the world and capture the essence of each location. I am constantly
+                    learning new techniques and expanding my knowledge of photography to ensure my images are of the
+                    highest quality. I am excited to share my passion with others and create memories that will last a
+                    lifetime.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- page 3/ works page -->
+    <div class="container my-5 py-5" id="works">
+        <div class="row my-md-5 py-md-5">
+            <div class="col-md-4 my-3">
+                <img src="./images/work1.png" class="img-fluid">
+            </div>
+            <div class="col-md-4 my-3">
+                <img src="./images/work2.png" class="img-fluid">
+            </div>
+            <div class="col-md-4 my-3">
+                <img src="./images/work3.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- contact section -->
+    <div class="container-fluid" id="contact">
+        <div class="row">
+            <div class="col-md-6 text-center d-flex flex-column justify-content-center align-items-center py-5 py-md-0" id="contact-image">
+                <h4 id="social-header">Follow me on social media</h4>
+                <div class="row">
+                    <div class="col-12 mt-5 pt-1 d-flex justify-content-center align-items-center">
+                        <div class="row">
+                            <div class="col-4 img-fluid">
+                                <img src="./images/Facebook.png">
+                            </div>
+                            <div class="col-4 img-fluid d-flex justify-content-center align-items-center">
+                                <img src="./images/Instagram.png">
+                            </div>
+                            <div class="col-4 img-fluid d-flex justify-content-center align-items-center">
+                                <img src="./images/Youtube.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2 id="contact-header" class="pt-5 pb-3">Get in touch!</h2>
+                <p id="contact-text" class="mt-2 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <form class="mt-3">
+                    <div class="form-group my-4">
+                        <label for="exampleFormControlInput1">Name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
+                    </div>
+                    <div class="form-group my-4">
+                        <label for="exampleFormControlInput2">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput2"
+                            placeholder="john.doe@email.com">
+                    </div>
+                    <div class="form-group my-4">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                    </div>
+                    <div class="my-5 d-flex justify-content-end">
+                        <button id="form-btn" class="btn ">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="py-3">
+        Copyright. John Doe Photography
+    </footer>
+
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
