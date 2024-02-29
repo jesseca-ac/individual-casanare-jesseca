@@ -28,5 +28,11 @@ router.post("/register", userController.registerUser);
 // [SECTION] Route for user authentication
 router.post("/login", userController.loginUser);
 
+// [SECTION] Route to enroll user to a course
+
+router.post('/enroll', verify, userController.enroll)
+
+// [SECTION] Route to get the user's enrollments array
+router.get('/getEnrollments', verify, userController.getEnrollments);
 
 module.exports = router;
